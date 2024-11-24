@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesium Viewer with Location Display</title>
+    <!-- Include CesiumJS library -->
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.108/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.108/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+
+    <!-- Cesium Viewer -->
+    <div id="cesiumContainer"></div>
+
+    <!-- Information display section -->
+    <div id="infoContainer">
+        <h3>Camera Location</h3>
+        <div id="coordinates" class="coordinate">
+            <p>Latitude: <span id="latitude">Loading...</span></p>
+            <p>Longitude: <span id="longitude">Loading...</span></p>
+            <p>Altitude: <span id="altitude">Loading...</span></p>
+        </div>
+        <div id="locationImageContainer">
+            <img src="images/globe.png" id="globeImage" alt="Globe">
+            <img src="images/arrow.png" id="arrowImage" alt="Arrow" />
+        </div>
+    </div>
+
+    <!-- Link to the compiled main.js -->
+    <script src="dist/js/main.js"></script>
+</body>
+</html>

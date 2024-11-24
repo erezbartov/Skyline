@@ -1,0 +1,47 @@
+/* Basic layout */
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+#cesiumContainer {
+    width: 70%; /* 70% of screen width for Cesium viewer */
+    height: 100%;
+}
+
+#infoContainer {
+    width: 30%; /* 30% of screen width for location info */
+    height: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f4f4f4;
+}
+
+#infoContainer h3 {
+    margin-top: 0;
+}
+
+.coordinate {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Position the globe and arrow images */
+#locationImageContainer {
+    position: relative;
+    width: 500px;  /* Width of the globe image */
+    height: 500px; /* Height of the globe image */
+    background-size: cover;
+    margin-top: 20px;
+}
+
+#arrowImage {
+    position: absolute;
+    width: 15px;  /* Size of the arrow */
+    height: auto;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
